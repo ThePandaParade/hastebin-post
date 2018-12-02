@@ -5,7 +5,7 @@ An unofficial https://www.hastebin.com/ library for easier hastebin making
 The only current requirement is superagent. I am working to wipe the requirement, yet for now, it requires superagent.
 
 # Installation
-``npm i --save hastebin-post superagent``
+``npm i --save hastebin-post superagent``\n 
 Or for development version
 ``npm i --save MainUserDrive/hastebin-post visionmedia/superagent``
 
