@@ -1,19 +1,19 @@
 # hastebin-post
 An unofficial https://www.hastebin.com/ library for easier hastebin making
 
-#Requirements
+# Requirements
 The only current requirement is superagent. I am working to wipe the requirement, yet for now, it requires superagent.
 
-#Installation
+# Installation
 ``npm i --save hastebin-post superagent``
 Or for development version
 ``npm i --save MainUserDrive/hastebin-post visionmedia/superagent``
 
-#Usage
-[Library].post('string to post',{options})
+# Usage
+[Required lib].post('string to post',{options})
 
-#Options
+# Options
 {keyonly: boolean} - Specifies if it should return the key, or the URL. Defaults to: false
 
-#License
+# License
 ISC
