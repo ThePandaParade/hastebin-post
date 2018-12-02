@@ -11,10 +11,7 @@ Or for GitHub development version:
 ```npm i --save MainUserDrive/hastebin-post visionmedia/superagent```
 
 # Usage
-[Required lib].post('string to post',{options})
-
-# Options
-{keyonly: boolean} - Specifies if it should return the key, or the URL. Defaults to: false
+[Required lib].post('string to post')
 
 # License
 ISC
