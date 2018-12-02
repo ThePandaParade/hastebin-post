@@ -6,7 +6,7 @@ The only current requirement is superagent. I am working to wipe the requirement
 
 # Installation
 Stable release:
-``npm i --save hastebin-post superagent``
+```npm i --save hastebin-post superagent```
 Or for GitHub development version:
 ```npm i --save MainUserDrive/hastebin-post visionmedia/superagent```
 
