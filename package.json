@@ -1,0 +1,26 @@
+{
+  "name": "hastebin-post",
+  "version": "1.0.3",
+  "description": "An unofficial https://hastebin.com/ library for easier document-making (requires superagent to be installed)",
+  "main": "hastebin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MainUserDrive/hastebin-post.git"
+  },
+  "keywords": [
+    "hastebin",
+    "post"
+  ],
+  "author": "PixelPikachu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MainUserDrive/hastebin-post/issues"
+  },
+  "homepage": "https://github.com/MainUserDrive/hastebin-post/blob/master/README.md",
+  "dependencies": {
+    "superagent": "^4.0.0"
+  }
+}
