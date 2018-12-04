@@ -20,6 +20,8 @@ Or for GitHub development version:
 # Example
 ``const hastebin = require("hastebin-post"); // npm install hastebin-post
 
-hastebin.post("string");``  
+hastebin.post("string");``
+
+
 # License
 ISC
