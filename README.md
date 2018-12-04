@@ -21,7 +21,7 @@ Or for GitHub development version:
 ```
 const hastebin = require("hastebin-post"); // npm install hastebin-post  
   
-hastebin.post("string");7
+hastebin.post("string");
 ```
 
 
