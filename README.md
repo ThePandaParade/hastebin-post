@@ -18,9 +18,9 @@ Or for GitHub development version:
 [Required lib].post('string to post')
 
 # Example
-``const hastebin = require("hastebin-post"); // npm install hastebin-post
-
-hastebin.post("string");``
+```const hastebin = require("hastebin-post"); // npm install hastebin-post  
+  
+hastebin.post("string");```
 
 
 # License
