@@ -26,4 +26,4 @@ hastebin.post("string");
 
 
 # License
-ISC
+MIT Copyright 2018 MainUserDrive
