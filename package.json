@@ -1,6 +1,6 @@
 {
   "name": "hastebin-post",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "An unofficial https://hastebin.com/ library for easier document-making (requires superagent to be installed)",
   "main": "hastebin.js",
   "scripts": {
