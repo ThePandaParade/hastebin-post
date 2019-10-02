@@ -1,8 +1,29 @@
-const superagent = require('superagent')
-module.exports = async function(string, options) {
-    if (string === undefined) {throw "String is a required argument"}
-    const req = await superagent.post('https://www.hastebin.com/documents')
-     .send(string)
-     .catch((err) => {throw "Failed to post to Hastebin. Hastebin might be down, or your internet is dead. Please try again"})
-    return `https://hastebin.com/${req.body.key}` 
+const https = require("https");
+
+module.exports = function(str) {
+  return new Promise((resolve, reject) => {
+    if(!str) return reject("str must be a string.");
+    const req = https.request({
+      host: "hastebin.com",
+      path: "/documents",
+      method: "POST",
+      headers: {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": Buffer.byteLength(str)
+      }
+    });
+    req
+      .once("response", (res) => {
+        const body = [];
+        res
+          .on("data", (chunk) => body.push(chunk))
+          .on("error", (err) => reject(err))
+          .on("end", () => {
+            const key = JSON.parse(Buffer.concat(body)).key;
+            return resolve(`https://hastebin.com/${key}`);
+          });
+      })
+      .once("error", (err) => reject(err));
+    return req.end(str);
+  });
 }

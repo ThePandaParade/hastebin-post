@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MainUserDrive/hastebin-post.git"
+    "url": "git+https://github.com/FlareonUwU/hastebin-post.git"
   },
   "keywords": [
     "hastebin",
@@ -20,7 +20,5 @@
     "url": "https://github.com/MainUserDrive/hastebin-post/issues"
   },
   "homepage": "https://github.com/MainUserDrive/hastebin-post/blob/master/README.md",
-  "dependencies": {
-    "superagent": "^4.0.0"
-  }
+  "dependencies": {}
 }

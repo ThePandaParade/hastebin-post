@@ -1,29 +1,28 @@
 # hastebin-post
 An unofficial https://www.hastebin.com/ library for easier hastebin making
 
-# Requirements
-The only current requirement is superagent. I am working to wipe the requirement, yet for now, it requires superagent.
-
-# NPM Installation
+# Install
 Stable release:  
-```npm i --save hastebin-post superagent```  
+```sh
+$ npm install hastebin-post
+# or with yarn
+$ yarn add hastebin-post
+```  
 Or for GitHub development version:  
-```npm i --save MainUserDrive/hastebin-post visionmedia/superagent```  
-
-# Yarn Installation
-``yarn add hastebin-post``
+```sh
+$ npm install FlareonUwU/hastebin-post
+# or with Yarn
+$ yarn add FlareonUwU/hastebin-post
+``` 
 
 
 # Usage
-[Required lib].post('string to post')
-
-# Example
 ```js
-const hastebin = require("hastebin-post"); // npm install hastebin-post  
+const hastebin = require("hastebin-post");
   
-hastebin.post("string");
+hastebin.post("string")
+  .then((url) => console.log(`URL: ${url}`));
 ```
 
-
 # License
-MIT Copyright 2018 MainUserDrive
+MIT Copyright 2018-2019 FlareonUwU
