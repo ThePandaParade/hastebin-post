@@ -1,5 +1,5 @@
 # hastebin-post
-An unofficial https://www.hastebin.com/ library for easier hastebin making
+An unofficial https://www.hastebin.com/ library for easier Hastebin making.
 
 # Install
 Stable release:  
