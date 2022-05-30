@@ -1,10 +1,10 @@
 {
   "name": "hastebin-post",
   "version": "1.0.7",
-  "description": "An unofficial https://hastebin.com/ library for easier document-making (requires superagent to be installed)",
+  "description": "An unofficial library for https://hastebin.com/ which makes 'paste'-creation significantly easier.",
   "main": "hastebin.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "hastebin",
-    "post"
+    "post",
+    "es6"
   ],
   "author": "PixelPikachu",
   "license": "ISC",
@@ -20,5 +21,5 @@
     "url": "https://github.com/MainUserDrive/hastebin-post/issues"
   },
   "homepage": "https://github.com/MainUserDrive/hastebin-post/blob/master/README.md",
-  "dependencies": {}
+  "dependencies": { }
 }

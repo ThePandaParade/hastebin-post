@@ -1,21 +1,29 @@
+/* jshint esversion: 6 */
+
+(() => "use strict")();
+
 const https = require("https");
 
-module.exports = function(str) {
+module.exports = (string) => {
   return new Promise((resolve, reject) => {
-    if(!str) return reject("str must be a string.");
-    const req = https.request({
+    if (!string) return reject("Argument 'string' not found.");
+    if (typeof(string) != "string") return reject("Argument 'string' must be of type string.");
+    if (string.length <= 0) return reject("Argument 'string' is empty, please consider adding some text!");
+
+    const request = https.request({
       host: "hastebin.com",
       path: "/documents",
       method: "POST",
       headers: {
         "Content-Type": "text/plain; charset=utf-8",
-        "Content-Length": Buffer.byteLength(str)
+        "Content-Length": Buffer.byteLength(string)
       }
     });
-    req
-      .once("response", (res) => {
-        const body = [];
-        res
+
+    request
+      .once("response", (response) => {
+        const body = [ ];
+        response
           .on("data", (chunk) => body.push(chunk))
           .on("error", (err) => reject(err))
           .on("end", () => {
@@ -23,7 +31,8 @@ module.exports = function(str) {
             return resolve(`https://hastebin.com/${key}`);
           });
       })
-      .once("error", (err) => reject(err));
-    return req.end(str);
+      .once("error", (error) => reject(error));
+
+    return request.end(string);
   });
-}
+};

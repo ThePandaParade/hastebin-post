@@ -1,28 +1,28 @@
 # hastebin-post
-An unofficial https://www.hastebin.com/ library for easier Hastebin making.
+An unofficial library for https://hastebin.com/ which makes 'paste'-creation significantly easier.
 
-# Install
-Stable release:  
+## Install
+Stable Release:
 ```sh
 $ npm install hastebin-post
-# or with yarn
+# or with Yarn
 $ yarn add hastebin-post
 ```  
-Or for GitHub development version:  
+
+GitHub Development Version:  
 ```sh
 $ npm install FlareonUwU/hastebin-post
 # or with Yarn
 $ yarn add FlareonUwU/hastebin-post
 ``` 
 
-
-# Usage
+## Usage
 ```js
 const hastebin = require("hastebin-post");
-  
-hastebin.post("string")
+
+hastebin("Hello, world!")
   .then((url) => console.log(`URL: ${url}`));
 ```
 
-# License
-MIT Copyright 2018-2019 FlareonUwU
+### License
+[MIT Copyright 2018-2019 FlareonUwU](./LICENSE)
